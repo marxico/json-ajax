@@ -13,8 +13,9 @@
             url: "file.json",    
             success: function( result ) {
                 $("#name").html('Name: ' + result.name);
-                $("#lastname").html(result.lastName);
-                $("#age").html(result.age);
+                $("#lastname").html("Apellido: " + result.lastName);
+                $("#age").html("Edad " + result.age);
+                $("address").html("Edad " + result.age);
             },
             error: function( err ) {
                 console.log('error',err);
