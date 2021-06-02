@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajax Json</title>
+    <script src="jquery.min.js"></script>
+
+    <script type="text/javascript">
+
+        $.ajax({
+            type: "GET",
+            url: "file.json",    
+            success: function( result ) {
+                $("#name").html('Name: ' + result.name);
+                $("#lastname").html(result.lastName);
+                $("#age").html(result.age);
+            },
+            error: function( err ) {
+                console.log('error',err);
+            }
+        });
+    </script>
+</head>
+<body>
+    
+    <div id="name"></div>
+    <div id="lastname"></div>    
+    <div id="age"></div>    
+</body>
+</html>
