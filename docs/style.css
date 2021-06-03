@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    
+    
+}
+
+#container{
+    position: absolute;
+    margin-left: 40%;
+    margin-top: 15%;
+}
+
+#btn{
+    position: absolute;
+    margin-left: 40%;
+    margin-top: 22%;
+}
+
+#btn-borrar{
+    position: absolute;
+    margin-left: 47%;
+    margin-top: 22%;
+
+}
