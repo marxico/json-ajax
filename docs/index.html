@@ -6,27 +6,7 @@
     <title>Ajax Json</title>
     <script src="jquery.min.js"></script>
 
-    <script type="text/javascript">
-    $("#btn").click(function(){
-       console.log("prueba")
-        $.ajax({
-            type: "GET",
-            url: "file.json",    
-            success: function( result ) {
-                $("#name").html('Name: ' + result.name);
-                $("#lastname").html("Apellido: " + result.lastName);
-                $("#age").html("Edad: " + result.age);
-                $("#address").html("Direccion: " + result.address);
-                $("#gender").html("Genero: " + result.gender);
-            },
-            error: function( err ) {
-                console.log('error',err);
-            }
-        });
-    })
-     
    
-    </script>
 </head>
 <body>
     
@@ -37,6 +17,28 @@
     <div id="gender"></div>  
     
     <button id="btn">Pisame</button>
+    <script type="text/javascript">
+        $("#btn").click(function(){
+           console.log("prueba")
+            $.ajax({
+                type: "GET",
+                url: "file.json",    
+                success: function( result ) {
+                    $("#name").html('Name: ' + result.name);
+                    $("#lastname").html("Apellido: " + result.lastName);
+                    $("#age").html("Edad: " + result.age);
+                    $("#address").html("Direccion: " + result.address);
+                    $("#gender").html("Genero: " + result.gender);
+                },
+                error: function( err ) {
+                    console.log('error',err);
+                }
+            });
+        })
+         
+       
+        </script>
+
 </body>
 </html>
 
