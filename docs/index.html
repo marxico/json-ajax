@@ -17,6 +17,8 @@
     <div id="gender"></div>  
     
     <button id="btn">Pisame</button>
+    <button id="btn-borrar">borrar</button>
+    
     <script type="text/javascript">
         $("#btn").click(function(){
            console.log("prueba")
@@ -36,6 +38,17 @@
             });
         })
          
+        $("#btn-borrar").click(function(){
+            $("#name").html('Name: ' + result.name);
+                    $("#lastname").html("Apellido: " );
+                    $("#age").html("Edad: " );
+                    $("#address").html("Direccion: " );
+                    $("#gender").html("Genero: " );
+
+
+
+
+        })
        
         </script>
 
