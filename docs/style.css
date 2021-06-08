@@ -6,23 +6,30 @@
     
 }
 
-/*#container{
-    position: absolute;
-    margin-left: 10%;
-    margin-top: 15%;
-}*/
+
 
 #btn{
     position: absolute;
     margin-left: 34%;
     margin-top: 24%;
+    padding-top: 5px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-bottom: 5px;
+    background-color: black;
+    color: white;
 }
 
 #btn-borrar{
     position: absolute;
     margin-left: 50%;
     margin-top: 24%;
-
+    padding-top: 5px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-bottom: 5px;
+    background-color: black;
+    color: white;
 }
 
 
