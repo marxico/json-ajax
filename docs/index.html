@@ -21,9 +21,9 @@
     <div id="container">
         <div id="name"></div>
         <div id="lastname"></div>    
-        <div id="age"></div> 
-        <div id="address"></div> 
-        <div id="gender"></div>    
+        <div id="id"></div> 
+        <div id="phone"></div> 
+          
     
       <br>
     </div>
@@ -37,11 +37,11 @@
                 type: "GET",
                 url: "file.json",    
                 success: function( result ) {
-                    $("#name").html('Name: ' + result.name);
-                    $("#lastname").html("Apellido: " + result.lastName);
-                    $("#age").html("Edad: " + result.age);
-                    $("#address").html("Direccion: " + result.address);
-                    $("#gender").html("Genero: " + result.gender);
+                    $("#name").html( result.name);
+                    $("#lastname").html( result.lastName);
+                    $("#id").html( result.id);
+                    $("#phone").html( result.phone);
+                    
                 },
                 error: function( err ) {
                     console.log('error',err);
@@ -50,11 +50,11 @@
         })
          
         $("#btn-borrar").click(function(){
-            $("#name").html('Name: ' );
-            $("#lastname").html("Apellido: " );
-            $("#age").html("Edad: " );
-            $("#address").html("Direccion: " );
-            $("#gender").html("Genero: " );
+            $("#name").html(' ' );
+            $("#lastname").html(" " );
+            $("#id").html(" " );
+            $("#phone").html(" " );
+            
         });
        
         </script>

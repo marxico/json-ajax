@@ -6,22 +6,22 @@
     
 }
 
-#container{
+/*#container{
     position: absolute;
     margin-left: 10%;
     margin-top: 15%;
-}
+}*/
 
 #btn{
     position: absolute;
-    margin-left: 0%;
-    margin-top: 22%;
+    margin-left: 34%;
+    margin-top: 24%;
 }
 
 #btn-borrar{
     position: absolute;
-    margin-left: 7%;
-    margin-top: 22%;
+    margin-left: 50%;
+    margin-top: 24%;
 
 }
 
@@ -69,4 +69,36 @@
     padding-right: 150px;
     padding-top: 7px;
     padding-bottom: 5px;
+}
+
+#name{
+    position: absolute;
+    margin-left: 35%;
+    margin-top: 223px;
+    background-color: grey;
+    color: white;
+}
+
+#lastname{
+    position: absolute;
+    margin-left: 51%;
+    margin-top: 223px;
+    background-color: grey;
+    color: white;
+}
+
+#id{
+    position: absolute;
+    margin-left: 35%;
+    margin-top: 293px;
+    background-color: grey;
+    color: white;
+}
+
+#phone{
+    position: absolute;
+    margin-left: 51%;
+    margin-top: 294px;
+    background-color: grey;
+    color: white;
 }
